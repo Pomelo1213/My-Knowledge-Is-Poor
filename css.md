@@ -234,7 +234,51 @@ div{
 ### 双飞翼布局
 
 ```html
+  <div class="outer">
+    <div class="middle">
+        <div class="inner-middle">
+        </div>
+    </div>
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+```
 
+```css
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.middle{
+  width: 100%;
+  border:1px solid red;
+  float: left;
+}
+
+
+.inner-middle{
+  background-color: red;
+  width: 100%;
+  height: 100px;
+}
+
+.left{
+  float: left;
+  background-color: blue;
+  width: 100px;
+  height: 100px;  
+  margin-left: -100%;
+}
+
+.right{
+  float: left;
+  background-color: pink;
+  width: 100px;
+  height: 100px; 
+  margin-left: -100px;
+}
 ```
 
 
